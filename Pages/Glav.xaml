@@ -1,0 +1,46 @@
+﻿<Page x:Class="Акцесвпф.Pages.Glav"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Акцесвпф.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="700"
+      Title="Glav">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <TextBlock Text="Главная" FontSize="24" FontFamily="Deutsch Gothic" Margin="10" 
+                       HorizontalAlignment="Center" Foreground="White"/>
+        </StackPanel>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Button Name="OpenInfAbTalk_Button" Click="OpenInfAbTalkbtn" Height="40" Margin="5">
+                <TextBlock Text="Открыть Информацию о длительности разговоров" TextWrapping="Wrap" TextAlignment="Center" />
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <Button Click="OpenPrice" Height="40" Margin="5">
+                <TextBlock Text="Открыть Цены на разговор" TextWrapping="Wrap" TextAlignment="Center" />
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <Button Click="OpenSearchId" Height="40" Margin="5">
+                <TextBlock Text="Открыть Поиск по id_Квитанции" TextWrapping="Wrap" TextAlignment="Center" />
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
